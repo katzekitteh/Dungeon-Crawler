@@ -1,5 +1,7 @@
 package io.github.omn0mn0m.dungeoncrawler;
 
+import io.github.omn0mn0m.util.Console;
+
 /**
  * This is the main class for the game. Everything for the game runs from here.
  * @author Nam Tran
@@ -8,6 +10,7 @@ package io.github.omn0mn0m.dungeoncrawler;
 public class Main {
 
     public static void main(String[] args) {
+    	Console console = new Console("Game");
         Game game = new Game();	// What runs for the game to work
         
         game.heroClassSelect();	// Selection for the character class
